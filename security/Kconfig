@@ -52,6 +52,10 @@ config KAISER
 	  This enforces a strict kernel and user space isolation in order to close
 	  hardware side channels on kernel address information.
 
+config KAISER_REAL_SWITCH
+	bool "KAISER: actually switch page tables"
+	default y
+
 config SECURITY_WRITABLE_HOOKS
 	depends on SECURITY
 	bool
