@@ -1,0 +1,221 @@
+ed5f04 Merge "mmc: sdhci-msm: Remove printing tlmm physical address"
+190afc mmc: sdhci-msm: Avoid leaking kernel address from mmc platform driver
+bef5a1 mmc: sdhci-msm: Remove printing tlmm physical address
+ab60a0 mmc: sdhci-msm: Updated SDCC restore sequence for CX Power Collapse event
+c9e2c0f mmc: sdhci-msm: Add support to scale bus aggregate clock
+1d7e518 mmc: sdhci-msm: flush mmc detect work asynchronously.
+0d5fc2 mmc: sdhci-msm: Invalidate pin drive type data if it's not present
+b903ad mmc: sdhci-msm: select pin drive type for each clock rate
+c1f5488 Merge "mmc: sdhci-msm: Read and use DDR Config property from dt file"
+a54926 mmc: sdhci-msm: Read and use DDR Config property from dt file
+000540 Merge "mmc: sdhci-msm: Add bus aggregate clock for sdhc platform driver"
+cd78bbb mmc: host: Update error stats to track different mmc errors
+674aed mmc: sdhci-msm: Add bus aggregate clock for sdhc platform driver
+2f80a4 Merge "mmc: sdhci-msm: get the load notification from clock scaling"
+073ca5 mmc: sdhci-msm: get the load notification from clock scaling
+1a81004 Merge "mmc: host: sdhci-msm-ice: Support for clearing ice configuration"
+1ba160 Merge "mmc: sdhci-msm: Free pltfm_host on probe defer"
+6c6b97 mmc: host: sdhci-msm-ice: Support for clearing ice configuration
+6e7e6d mmc: cmdq_hci: CQ Register changes for sdm660
+bf7c99 Merge "mmc: sdhci-msm: fix tracepoint for pm debugging"
+c606fa9 Merge "mmc: sdhci: Force probe of shdc1 based on boolean property"
+98edaa mmc: sdhci-msm: fix tracepoint for pm debugging
+94e408 mmc: sdhci-msm: Free pltfm_host on probe defer
+07bd67 Merge "mmc: sdhci-msm-ice: Add new sdhci host_op for updating ice config"
+e8e138 Merge "mmc: sdhci-msm: Don't enable PWRSAVE_DLL for all latest sdhc hosts"
+f85280 Merge "mmc: sdhci-msm: make probe as async probe"
+5bb094 Merge "mmc: sdhci: Enable CDR for cmdq mode"
+46578dc2 mmc: sdhci: Force probe of shdc1 based on boolean property
+e73832d mmc: sdhci-msm: make probe as async probe
+06d2c8c mmc: sdhci-msm: Don't enable PWRSAVE_DLL for all latest sdhc hosts
+6b495d4 mmc: host: sdhci-msm: Enable SDHC FIFO explicitly
+174f3a mmc: sdhci-msm: Set dll to good phase while sending cmd13 in tuning
+dec588 mmc: sdhci-msm-ice: Add new sdhci host_op for updating ice config
+d8936f mmc: sdhci-msm: Put platform suspend in late suspend list
+3096be Merge "mmc: host: Capture error states in Trace logs."
+0196fe mmc: host: Capture error states in Trace logs.
+9efe65 mmc: sdhci: Enable CDR for cmdq mode
+b32352 mmc: sdhci-msm: consider clock frequency above 200MHz during DLL config
+4e40ad mmc: sdhci-msm: Update ICE reset register offset for ICE HCI
+6324ee mmc: sdhci-msm: dump ICE registers also on error
+9325fb mmc: sdhci-msm: Add Inline Crypto Engine (ICE) support
+6fa49fe mmc: sdhci-msm: Restore SDCC Registers After CX Power Collapse
+eed1dea mmc: sdhci-msm: Don't turnoff Vcc during initialization
+0f5ac95 mmc: sdhci-msm: Corrected the '&' operator with '&&' in the 'if' statement
+c6ca03 Merge "mmc: sdhci-msm: Change pm_qos cpu groups latency to PM_QOS_DEFAULT_VALUE"
+b41e05 mmc: sdhci-msm: Change pm_qos cpu groups latency to PM_QOS_DEFAULT_VALUE
+c8ad70f mmc: sdhci-msm: Cache mmc data structures for debugging
+4ca0e9 Merge "mmc: host: sdhci-msm: Don't clear IO_PAD_PWR_SWITCH when faking 3V support"
+ac24b40 mmc: host: sdhci-msm: Don't clear IO_PAD_PWR_SWITCH when faking 3V support
+88fdea mmc: host: sdhci-msm: Skip reading GENERICS register in check_pwr_status
+e5bab4 mmc: sdhci-msm: Store clock scaling frequencies in a dedicated table
+7ae9c2c mmc: sdhci-msm: add SDR104 CRC workaround enablement control
+08d3caf mmc: sdhci-msm: get lower bus speed mode for clock scaling
+821247 mmc: sdhci-msm: Dont wait infinitely for pwr_irq interrupt
+b3029516 mmc: sdhci-msm: Disable controller clocks in suspend
+7270ca mmc: sdhci-msm: Provide module/cmdline parameter for disabling cmdq
+bff771e mmc: sdhci: Add mmc tracing events for legacy mode.
+f0ee1f mmc: host: Register changes for msmfalcon
+9150a94 host: sdhci-msm: implement get_current_limit() host op
+c1e975 mmc: host: sdhci-msm: fix NULL pointer dereference
+db5e53d mmc: sdhci-msm: use PIO for tuning commands
+43fb33 mmc: sdhci-msm: enable quirk to define non standard tuning
+f2dda06 drivers: mmc: fix issue raised by source code analyzer tool
+5f7683 Revert "mmc: sdhci: Panic after dumping SDHC registers"
+c66abc mmc: sdhci-msm: Don't enable MMC_CAP2_FULL_PWR_CYCLE
+0523cd mmc: sdhci-msm: Fix recursive tuning issue
+7cd1e4 mmc: sdhci-msm: Set sdio_pending_processing default state to false
+17f5d8 mmc: sdhci-msm: Fix NULL pointer dereference
+b5c8e17 mmc: sdhci-msm: Fix wakeup functionality for SDIO
+5e0f04af mmc: sdhci: revert MMC_PM_KEEP_POWER changes related to emmc
+36c2e92 mmc: sdhci: delay the QoS vote removal
+42876f mmc: sdhci-msm: Add wakeup functionality support for sdio
+8f73d6 mmc: sdhci-msm: Remove MMC_CAP2_ASYNC_SDIO_IRQ_4BIT_MODE capability
+6f0f34 mmc: sdhci-msm: add support for fourth drive strength
+976e8cb mmc: sdhci: Panic after dumping SDHC registers
+f85e31a mmc: sdhci-msm: fix compilation errors
+45ef13 mmc: sdhci-msm: disable runtime pm and clock gating for SDIO
+079ed8 mmc: sdhci-msm: parse and configure TLMM iomem resource
+5a256d mmc: sdhci-msm: add the ability to fake 3.0v support for SDIO devices
+a7a36b mmc: sdhci-msm: dump cmdq debug ram only for command queue host
+4d8139 mmc: sdhci-msm: don't bug on PM QoS request counter going negative
+b62c9e mmc: sdhci-msm: enable partial initialization in resume
+095ad9 mmc: sdhci_msm: keep a reference to the sdhc host instance
+79fdcc2 mmc: sdhci-msm: use max discard size supported for mmc queue
+68c545 mmc: sdhci-msm: add sysfs entries for PM QoS
+98543bf mmc: sdhci-msm: add offset to CMDQ_COMMAND_DEBUG_RAM_x registers access
+07d92e mmc: sdhci-msm: add PM QoS legacy voting
+4444599 mmc: sdhci-msm: add PM QoS voting
+c788a6 mmc: sdhci-msm: add PM QoS properties for IRQ and cpu group voting
+bd3021 mmc: sdhci: remove support for pm_qos
+70e2a71 mmc: sdhci-msm: Add checks to know if card supports strobe
+b5dd77 mmc: sdhci-msm: return correct error code if emmc is not bootdevice
+b47cf4 mmc: sdhci-msm: fix register address change for DDR_CONFIG
+3435472 mmc: sdhci-msm: Set MMC_CAP_WAIT_WHILE_BUSY capability
+8e36f66 mmc: sdhci-msm: Correct the CDR toggle logic
+691dd59 mmc: sdhci-msm: Implement reset workaround and enable it
+2ba05a mmc: sdhci-msm: Enable one MID for SDHCI controller
+07d62e mmc: host: add support to allow SANITIZE operation
+f7bf51 mmc: sdhci-msm: change the rclk delay value
+53ffa0b mmc: sdhci-msm: Fix HW issue with power IRQ handling during reset
+eeb3b1 mmc: sdhci-msm: Setting coherent_dma_mask
+faff7f8 mmc: sdhci-msm: Improvise tuning to check the card status
+9c575e mmc: sdhci-msm: configure MMC_PM_KEEP_POWER for SDIO
+a3888f mmc: sdhci-msm: Fix SD card detection issue
+4a5ffd mmc: sdhci-msm: Configure CMDEN_HS400_INPUT_MASK_CNT for cmdq
+3d1dbf mmc: sdhci-msm: enable clock scaling capability
+ebcd00 mmc: sdhci-msm: skip eMMC slot probe if eMMC isn't a bootdevice
+b7ccc9 Revert "mmc: sdhci-msm: enable clock scaling capability"
+4661c2 mmc: sdhci-msm: avoid using NOP ADMA descriptor for EOT
+272ba40 mmc: sdhci-msm: Fix compatible list termination
+ea70966 mmc: sdhci-msm: Add hs400 enhanced strobe mode support to host
+17edb3 mmc: sdhci-msm: Reset vendor specific func register on probe
+a834c0 mmc: sdhci-msm: enable clock scaling capability
+3481197 mmc: sdhci-msm: increase number of testbuses to 60
+06f7f79 mmc: sdhci-msm: do not disable test-bus
+d371f14 mmc: sdhci-msm: add support for command-queue
+7dc5f7 mmc: core: devfreq: migrate to devfreq based clock scaling
+c0a36727 Revert "mmc: sdhci-msm: Disable pm functionalities"
+c9033a mmc: add support for scheduling mmcqd on idle CPU
+9a25b8 mmc: sdhci-msm: Fix clk gating on MSM8996-v2/v3 revisions
+5687473 mmc: sdhci-msm: Move common definitions to header file
+764065 mmc: sdhci-msm: Dont enable PWRSAVE_DLL for certain sdhc hosts
+ddab0c mmc: sdhci-msm: Add tracepoints to enhance pm debugging
+9a62e0 mmc: sdhci-msm: enable 64-bit ADMA
+46fd1436 mmc: sdhci-msm: support dual voltage pad for eMMC
+98377d mmc: sdhci-msm: add registration to pm core framework
+e0be02d mmc: sdhci-msm: move pwr_irq to sdhci_msm_host
+ca20b3 mmc: sdhci-msm: Disable packed commands
+c0a5c3 mmc: sdhci-msm: Update DLL reset sequence
+e6659b mmc: sdhci-msm: Disable pm functionalities
+0a29da mmc: sdhci-msm: Update mmc DDR timing mode
+411df0 mmc: sdhci-msm: use the generic sdhci_reset()
+b8cb70 mmc: sdhci-msm: use the generic sdhci_set_bus_width()
+97c161 mmc: sdhci-msm: Adjust host capabilities
+0a92d53 mmc: sdhci-msm: Add missing register defines
+994cf2 mmc: host: sdhci: allow definition of pm QoS via dts file
+2a10ca0 mmc: sdhci-msm: force 32bit ADMA descriptors
+3ac8fd mmc: sdhci-msm: Add dual voltage capability
+f7c913 mmc: sdhci-msm: add nonhotplug support
+890bde mmc: sdhci-msm: fix possible NULL pointer dereference
+450745 mmc: sdhci-msm: Reduce the max descriptors
+be406d mmc: sdhci-msm: configure CORE_CSR_CDC_DELAY_CFG to recommended value
+0e8efb sdhci: sdhci-msm: fix issue with hs400 mode
+2faa7b sdhci: sdhci-msm: update dll configuration
+6ddabb mmc: sdhci-msm: Fix issue with SD card detect GPIO
+c7097a2 mmc: sdhci-msm: Correct usage of readl_poll_timeout() API
+dfdb4af mmc: sdhci-msm: fix issue with SD card tuning functionality
+96e6b1 mmc: sdhci-msm: improve tuning process
+1cd7e0 mmc: sdhci-msm: remove mach/gpio.h
+598a4d4 mmc: sdhci-msm: add default qos
+9acf26 mmc: sdhci: Add support for pinctrl interface
+bf1aec mmc: sdhci-msm: Fix clock gating while voltage switch is in progress
+ada479 mmc: sdhci-msm: Add software capabilities for 8-bit slot
+d8acb7c mmc: sdhci-msm: Add software capabilities for voltage init
+9d7ee2f mmc: sdhci-msm: enable controller clocks at MMC_POWER_UP
+7feab35 mmc: sdhci-msm: set dma mask for lpae/64-bit machines
+a4d0fa mmc: sdhci-msm: set core in proper mode before reset
+dc18298 mmc: sdhci-msm: Fix issue with 1.8v switch sequence in 3.10 kernel
+e000b24 mmc: sdhci-msm: Fix issue with power save bit enablement
+043744a mmc: sdhci-msm: Enable controller power save feature
+e5e9ca mmc: sdhci-msm: Enable auto-calibration using auto-cmd21
+9e0696 mmc: sdhci-msm: Add calibration tuning for CDCLP533 circuit
+7f6915 mmc: sdhci-msm: Add HS400 platform support
+481fbb mmc: sdhci-msm: Fix power IRQ issue uncovered in 3.10 kernel
+214b966 mmc: sdhci-msm: ignore data-end-bit error in 1 bit mode
+024c058 mmc: sdhci-msm: Fix incorrect flags passed during spin_unlock_irqrestore
+67717bc mmc: sdhci-msm: dump vendor specific registers during error
+c58cc7a mmc: sdhci-msm: configure regulators only if defined in dts
+bea115d mmc: sdhci-msm: add MMC_PM_KEEP_POWER flag
+9fe165 mmc: sdhci-msm: Add retry mechanism in case of tuning failure
+5c55b93 mmc: sdhci-msm: Add polling sysfs entry
+3cedefe mmc: sdhci-msm: remove MMC_CAP_HW_RESET capability
+a5733ab5 mmc: sdhci-msm: calculate timeout value based on the base clock
+6d472b2 mmc: sdhci-msm: enable asynchronous interrupt support in 4-bit mode
+99bca3 mmc: sdhci-msm: fix pwrsave bit handling
+020ede0d mmc: sdhci-msm: set the clock rate before enabling it
+1958d3d mmc: sdhci-msm: Initialize card-detect polarity
+79edc6 mmc: sdhci-msm: Vote for MSM bus clocks before enabling iface_clk
+2813734 mmc: sdhci-msm: fix issue with power irq
+66b0fe mmc: sdhci-msm: wait for SW reset to be complete
+8dce5c mmc: sdhci-msm: Read version register properly
+7c9780d mmc: sdhci-msm: Use maximum possible data timeout value
+314162 mmc: sdhci-msm: Do not enable preset value
+87d439 mmc: sdhci-msm: Ignore data timeout error for R1B commands
+2886c92 mmc: sdhci-msm: Fix issue with MSM bus bandwidth voting
+1f52eaa mmc: sdhci: Fix issues with power IRQ handling
+270580a mmc: sdhci-msm: Disable SDHC slots at bootup if required
+22dd33 mmc: sdhci: Enable clock scaling feature
+146134 mmc: sdhci-msm: Implement uhs_set_signaling to select right mode
+eaa218 mmc: sdhci-msm: update dma_mask for SDHC device
+581df1 mmc: sdhci-msm: Add support for hardware based card detection
+8a3e81 mmc: sdhci: Vote for the required MSM bus bandwidth
+c6f48d mmc: sdhci: Vote for PM QOS
+a7f3c5 mmc: sdhci: Add host driver support to enable clock gating
+648f9d mmc: sdhci-msm: configure adma descriptors for large request size
+7bd990 mmc: sdhci: Enable MMC_CAP_HW_RESET capability
+7944a3 mmc: sdhci-msm: Implement platform_execute_tuning and toggle_cdr callbacks
+a58f91f mmc: sdhci: Add SW workarounds for HW bugs
+0ef248 mmc: host: add SDHCI platform driver for msm chipsets
+5209be mmc: sdhci-msm: remove support for Qualcomm chipsets
+34a818 mmc: sdhci-msm: Disable HS200 mode
+6b7912 sdhci: msm: add support for new vendor capabilities
+f998c1 mmc: sdhci-msm: adapt to allow drop-in use in place of downstream driver
+d1f63f mmc: sdhci-msm: Fix error return code in sdhci_msm_probe()
+ad81d3 mmc: sdhci-msm: Add support for UHS cards
+ee3206 mmc: sdhci-msm: Add set_uhs_signaling() implementation
+9718f8 mmc: sdhci-msm: Do not reset the controller if no card in the slot
+2801b95 mmc: sdhci-msm: fix spelling mistake: "Perpheral" -> "Peripheral"
+6f6995 mmc: sdhci-msm: use sdhci_pltfm_init for private allocation
+a50396 mmc: sdhci-msm: factorise sdhci_msm_pdata outisde of sdhci_msm_host
+9979db mmc: mmc: extend the mmc_send_tuning()
+951b8c mmc: sdhci-msm: Boost controller core clock
+3a3ad3 mmc: sdhci-msm: Add support for vendor capabilities registers
+33d739 mmc: sdhci-msm: Convert to mmc_send_tuning()
+48d11e06 mmc: Consolidate emmc tuning blocks
+ffed1b mmc: sdhci-msm: Make tuning block table endian agnostic
+2137f5d mmc: remove .owner field for drivers using module_platform_driver
+d30f01b mmc: sdhci-msm: Remove unnecessary header file inclusion
+ed1761 mmc: sdhci-msm: Fix fallout from sdhci refactoring
+415b5a mmc: sdhci-msm: Add platform_execute_tuning implementation
+0eb0d9 mmc: sdhci-msm: Initial support for Qualcomm chipsets
