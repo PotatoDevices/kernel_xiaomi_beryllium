@@ -44,8 +44,10 @@ config SECURITY
 	  model will be used.
 
 	  If you are unsure how to answer this question, answer N.
-config KAISER
+
+config PAGE_TABLE_ISOLATION
 	bool "Remove the kernel mapping in user mode"
+	default y
 	depends on X86_64 && SMP
 	help
 	  This enforces a strict kernel and user space isolation, in order
