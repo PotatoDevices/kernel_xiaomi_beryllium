@@ -859,7 +859,7 @@ static int put_v4l2_ext_controls32(struct v4l2_ext_controls __user *kp,
 		get_user(count, &kp->count) ||
 		get_user(kcontrols, &kp->controls))
 			return -EFAULT;
-	if (!count)
+	if (!count || count > (U32_MAX/sizeof(*ucontrols)))
 		return 0;
 
 	n = count;
