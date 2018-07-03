@@ -824,6 +824,17 @@ void *__subsystem_get(const char *name, const char *fw_name)
 
 	if (!name)
 		return NULL;
+	pr_debug("debugging: __subsystem_get: %s\n", name);
+	if (strcmp(name, "cdsp") == 0) {
+		jtag_id_vir = ioremap(JTAG_ID, 4);
+		jtag_id = readl_relaxed(jtag_id_vir);
+		iounmap(jtag_id_vir);
+		pr_debug("debugging: JTAG ID is %x\n", jtag_id);
+		if (0x0 == (jtag_id >> HW_VERSION_OFFSET)) {
+			pr_info("CDSP for 845 v1.0 is not supported!\n");
+			return NULL;
+		}
+	}
 
         printk("debugging: __subsystem_get: %s\n", name);
 	if (strcmp(name, "cdsp") == 0) {
