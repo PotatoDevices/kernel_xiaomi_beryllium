@@ -39,6 +39,8 @@
 
 #define ARM64_HARDEN_BRANCH_PREDICTOR		17
 
-#define ARM64_NCAPS				18
+#define ARM64_MISMATCHED_CACHE_TYPE		18
+
+#define ARM64_NCAPS				19
 
 #endif /* __ASM_CPUCAPS_H */
