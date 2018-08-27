@@ -1323,6 +1323,7 @@ err_core_init:
 	dwc3_core_exit_mode(dwc);
 err1:
 	destroy_workqueue(dwc->dwc_wq);
+	dwc3_ulpi_exit(dwc);
 err0:
 	/*
 	 * restore res->start back to its original value so that, in case the
