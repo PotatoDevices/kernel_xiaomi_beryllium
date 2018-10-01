@@ -3966,8 +3966,7 @@ static int msm_audrx_init(struct snd_soc_pcm_runtime *rtd)
 	if (get_hw_version_platform() == HARDWARE_PLATFORM_POLARIS ||
 		get_hw_version_platform() == HARDWARE_PLATFORM_DIPPER ||
 		get_hw_version_platform() == HARDWARE_PLATFORM_DIPPERN ||
-		get_hw_version_platform() == HARDWARE_PLATFORM_URSA ||
-		get_hw_version_platform() == HARDWARE_PLATFORM_EQUULEUS) {
+		get_hw_version_platform() == HARDWARE_PLATFORM_URSA) {
 		pr_info("add the External AMIC2 Mux\n");
 		snd_soc_dapm_new_controls(dapm, sdm845_polaris_dapm_widgets,
 				ARRAY_SIZE(sdm845_polaris_dapm_widgets));
@@ -6778,8 +6777,7 @@ static struct snd_soc_card *populate_snd_card_dailinks(struct device *dev)
 
 			if ((get_hw_version_platform() == HARDWARE_PLATFORM_DIPPER) ||
 				(get_hw_version_platform() == HARDWARE_PLATFORM_DIPPERN)||
-				(get_hw_version_platform() == HARDWARE_PLATFORM_URSA) ||
-				(get_hw_version_platform() == HARDWARE_PLATFORM_EQUULEUS)) {
+				(get_hw_version_platform() == HARDWARE_PLATFORM_URSA)) {
 				memcpy(msm_tavil_snd_card_dai_links + total_links,
 						msm_quat_mi2s_tas2557_dai_links,
 						sizeof(msm_quat_mi2s_tas2557_dai_links));
