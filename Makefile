@@ -398,6 +398,7 @@ KBUILD_CFLAGS   := -Werror -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Werror-implicit-function-declaration \
 		   -Wno-format-security \
 		   -Wno-maybe-uninitialized \
+		   -mcpu=cortex-a75.cortex-a55 -mtune=cortex-a75.cortex-a55 \
 		   -std=gnu89
 
 KBUILD_CPPFLAGS := -D__KERNEL__
