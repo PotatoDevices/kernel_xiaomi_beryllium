@@ -398,7 +398,11 @@ KBUILD_CFLAGS   := -Werror -Wall -Wundef -Wstrict-prototypes -Wno-trigraphs \
 		   -Werror-implicit-function-declaration \
 		   -Wno-format-security \
 		   -Wno-maybe-uninitialized \
-		   -mcpu=cortex-a75.cortex-a55 -mtune=cortex-a75.cortex-a55 \
+		   -mcpu=cortex-a75.cortex-a55 -mtune=cortex-a75.cortex-a55 -fdiagnostics-color=always \
+		   -Wno-int-in-bool-context -Wno-parentheses -Wno-switch-unreachable -Wno-stringop-overflow -Wno-format-overflow \
+		   -Wno-nonnull -Wno-attributes -Wno-packed-not-aligned -Wno-error=sizeof-pointer-div -Wno-sizeof-pointer-div \
+		   -Wno-sizeof-pointer-memaccess -Wno-stringop-truncation -Wno-error=duplicate-decl-specifier \
+		   -Wno-error=memset-elt-size -Wno-error=bool-operation -Wno-error=misleading-indentation \
 		   -std=gnu89
 
 KBUILD_CPPFLAGS := -D__KERNEL__
