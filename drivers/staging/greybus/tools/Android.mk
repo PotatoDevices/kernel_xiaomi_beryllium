@@ -1,4 +1,4 @@
-ifeq ($(BOARD_VENDOR), xiaomi)
+ifeq ($(PRODUCT_DEVICE), beryllium)
 LOCAL_PATH:= $(call my-dir)
 
 include $(CLEAR_VARS)
